@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/piii"
+    tools:context="com.example.emeh_son.login.MainActivity">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/watchtower"
+        android:background="@color/Blue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorAccent">
+
+
+        <EditText
+            android:id="@+id/logemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:hint="@string/email"
+            android:textColor="@color/balck"/>
+
+        <EditText
+            android:id="@+id/logpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/balck"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@color/balck">
+
+        <Button
+            android:id="@+id/btnSignin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/signin"
+            android:backgroundTint="@color/Green"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="      Or\nDon't Have\n  Account"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="italic"/>
+
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:backgroundTint="@color/Green"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
